@@ -3,7 +3,7 @@ import re
 from os import rename, listdir
 import shutil
 
-nowt = 6
+nowt = 9
 nown = 2
 nowp = "02_Hierarchical and Density Based Clustering\\"
 
