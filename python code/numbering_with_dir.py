@@ -8,8 +8,8 @@ from os import listdir
 
 ######### 정의하기 #########
 # 폴더이름 정의
-nowp = "03_Gaussian Mixture Models and Cluster Validation\\"
-# nowp = "04_Dimensionality Reduction and PCA\\"
+# nowp = "03_Gaussian Mixture Models and Cluster Validation\\"
+nowp = "04_Dimensionality Reduction and PCA\\"
 # nowp = "05_Random Projection and ICA\\"
 path = "D:\\!NW_Learning\\02 MOOC\\004_DataScientist_Udacity\\04_Unsupervised Learning\\"
 ############################
