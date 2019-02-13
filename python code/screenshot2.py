@@ -14,10 +14,12 @@ import pyscreenshot as ImageGrab
 
 ######### 정의하기 #########
 # 마지막 이미지 번호 이어할 것인지 새로 만들 것인지
-option_num = 0  # 0 이면 아래 정의한 새번호로 스샷저장
-# option_num = 1  # 1 이면 폴더내 마지막 파일명 이어서 스샷저장
+# option_num = 0  # 0 이면 아래 정의한 새번호로 스샷저장
+option_num = 1  # 1 이면 폴더내 마지막 파일명 이어서 스샷저장
 # option_num = 2  # 2 이면 마지막 번호까지 for문 출력
-new_num_t = 18
+# option_num = 3  # 3 이면 폴더 내 이미지파일명 출력
+
+new_num_t = 10
 new_num_n = 1
 
 # 폴더이름 정의
@@ -56,17 +58,21 @@ def screenshot_save(path):
 
 if __name__ == '__main__':
 
-    last_t(path_img)
-
+    
     if option_num == 0:
         file_name = num_zero(new_num_t,0) + "-0" +  num_zero(new_num_n,0) + ".png"
         screenshot_save(path_img + file_name)
-    elif option_num ==1:
+    elif option_num == 1:
+        last_t(path_img)
         file_name = str(titling) + "-0" +  num_zero(endi,1) + ".png"
         screenshot_save(path_img + file_name)
     elif option_num == 2:
+        last_t(path_img)
         for i in range(1, endi+1):
             print("![" + str(titling) + "-0" + num_zero(i,0) + "](img/" + titling + "-0" + num_zero(i,0) + ".png)")
+    elif option_num == 3:
+        last_t(path_img)
+        pass
     else:
         pass
         
