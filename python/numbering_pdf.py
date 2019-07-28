@@ -10,7 +10,7 @@
 fod = "book/img"
 
 #파일명
-fil = "w09_차량용OS디바이스프로그래밍_O2_페이지_"
+fil = "NVIDIA_TX보드를_활용한_딥러닝의_이해_cc_페이지_"
 
 def ini(tt):
 
@@ -27,5 +27,5 @@ def ini(tt):
             print("![" + str(i) + "](./" + fod + "/" + fil + str(i) + "_002.jpg)")
 
 if __name__ == "__main__":
-    ini(400)
+    ini(300)
 
